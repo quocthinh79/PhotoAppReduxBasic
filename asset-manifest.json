@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PhotoAppReduxBasic/static/css/main.b3873690.css",
-    "main.js": "/PhotoAppReduxBasic/static/js/main.3aa382a0.js",
+    "main.js": "/PhotoAppReduxBasic/static/js/main.39f5754b.js",
     "static/css/755.992157b9.chunk.css": "/PhotoAppReduxBasic/static/css/755.992157b9.chunk.css",
     "static/js/755.5cd12f9a.chunk.js": "/PhotoAppReduxBasic/static/js/755.5cd12f9a.chunk.js",
     "static/css/229.0bedde2e.chunk.css": "/PhotoAppReduxBasic/static/css/229.0bedde2e.chunk.css",
@@ -12,7 +12,7 @@
     "static/media/blue-bg.jpg": "/PhotoAppReduxBasic/static/media/blue-bg.93b683dcd7c104e108ed.jpg",
     "index.html": "/PhotoAppReduxBasic/index.html",
     "main.b3873690.css.map": "/PhotoAppReduxBasic/static/css/main.b3873690.css.map",
-    "main.3aa382a0.js.map": "/PhotoAppReduxBasic/static/js/main.3aa382a0.js.map",
+    "main.39f5754b.js.map": "/PhotoAppReduxBasic/static/js/main.39f5754b.js.map",
     "755.992157b9.chunk.css.map": "/PhotoAppReduxBasic/static/css/755.992157b9.chunk.css.map",
     "755.5cd12f9a.chunk.js.map": "/PhotoAppReduxBasic/static/js/755.5cd12f9a.chunk.js.map",
     "229.0bedde2e.chunk.css.map": "/PhotoAppReduxBasic/static/css/229.0bedde2e.chunk.css.map",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.b3873690.css",
-    "static/js/main.3aa382a0.js"
+    "static/js/main.39f5754b.js"
   ]
 }
