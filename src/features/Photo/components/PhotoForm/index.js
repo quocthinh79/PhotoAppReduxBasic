@@ -2,7 +2,7 @@ import { FastField, Form, Formik } from "formik";
 import PropTypes from "prop-types";
 import React from "react";
 import Select from "react-select";
-import { Button, FormGroup, Input, Label } from "reactstrap";
+import { Button, FormGroup, Input, Label, Spinner } from "reactstrap";
 import { PHOTO_CATEGORY_OPTIONS } from "../../../../constants/global";
 import Images from "../../../../constants/images";
 import InputField from "../../../../custom-fields/InputField";
@@ -21,7 +21,7 @@ PhotoForm.defaultProps = {
 function PhotoForm(props) {
   const initialValues = {
     title: "",
-    category: null,
+    categoryId: null,
     photo: "",
   };
 
@@ -35,10 +35,10 @@ function PhotoForm(props) {
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      onSubmit={(values) => console.log(values)}
+      onSubmit={props.onSubmit}
     >
       {(formikProps) => {
-        const { values, errors, touched } = formikProps;
+        const { values, errors, touched, isSubmitting } = formikProps;
         return (
           <Form>
             <FastField
@@ -50,7 +50,6 @@ function PhotoForm(props) {
             <FastField
               name="categoryId"
               component={SelectField}
-
               label="Category"
               placeholder="What's your photo category?"
               options={PHOTO_CATEGORY_OPTIONS}
@@ -65,6 +64,7 @@ function PhotoForm(props) {
               <Button type="submit" color="primary">
                 Add to album
               </Button>
+              {isSubmitting && <Spinner size="sm" />}
             </FormGroup>
           </Form>
         );
